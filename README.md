@@ -14,9 +14,8 @@ The Account Management System is a RESTful API built to manage account data, inc
 Prerequisites:
 * Java 17+
 * Maven 3.6+
-* MariaDB or MySQL database
+* H2 Dtabase
 * Git
-* Installation
 
 ### Clone the repository:
 ```
