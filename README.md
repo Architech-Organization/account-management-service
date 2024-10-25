@@ -57,26 +57,26 @@ The following endpoints are available:
 
 ### Create Account:
 
-POST /accounts
+POST /account/create
 Description: Create a new account.
-Request Body: AccountDTO with name, email, age, country, and postal code.
+Request Body: AccountDTO with name, email, age, country, postal code and status.
+
 Get Account by ID:
-
-GET /accounts/{id}
+GET /account/{id}
 Description: Retrieve account information by ID.
-Update Account:
 
+Update Account:
 PUT /accounts/update
 Description: Update account information by matching email, country, and postal code. The account must have "Active" status to be updated.
-Delete Account:
 
-DELETE /accounts/{id}
+Delete Account:
+DELETE /account/{id}
 Description: Delete an account by ID.
+
 Exception Handling
 Invalid or Duplicate Email: Returns HTTP 400 with a detailed error message.
 Account Not Found: Returns HTTP 404.
 Invalid Account Status: Returns HTTP 403 with a message indicating that the account must be "Active" to be updated.
-Running Tests
 
 #### Run the tests with Maven:
 
